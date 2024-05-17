@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Build the React app
-RUN npm start
+RUN npm run build
 
 # Use nginx image for serving the static files
-FROM nginx:latest
+FROM nginx:alpine
 
 # Copy the built React app from the build-stage
 COPY --from=build-stage /app/build /usr/share/nginx/html
