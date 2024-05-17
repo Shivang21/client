@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the React app
-RUN npm run build
+RUN npm start
 
 # Use nginx image for serving the static files
 FROM nginx:latest
