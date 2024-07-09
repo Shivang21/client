@@ -1,4 +1,4 @@
 import io from 'socket.io-client';
 // const sockets = io('http://localhost:3001', { autoConnect: true, forceNew: true });
-const sockets = io('https://servervideo-jvz7.onrender.com');
+const sockets = io('https://server-service-4g2g.onrender.com');
 export default sockets;
